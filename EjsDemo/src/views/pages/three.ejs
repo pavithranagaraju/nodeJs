@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Page Three</title>
+		<%- include ("../partial/head"); %>
+	</head>
+	<body>
+		<div class="header">
+			<%- include ("../partial/header"); %>
+		</div>
+		<div class="content">
+			<h1><%= tagline %></h1>
+			<ul>
+				<% for (var i=1;i<=5;i++){%>
+				<li>
+					<%= i +".Item " +i %>
+				</li>
+			<% } %> 
+			</ul>
+		</div>
+		
+		<div class="footer">
+			<%- include("../partial/footer"); %>
+		</div>
+	</body>
+</html>
